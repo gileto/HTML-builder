@@ -9,6 +9,7 @@ fs.writeFile(path.join(__dirname, "text.txt"), "", (err) => {
 let data = "";
 stdin.on("data", (input) => {
  if (input.includes("exit")) {
+  stdout.write("покеда");
   process.exit();
  }
  data = input;
