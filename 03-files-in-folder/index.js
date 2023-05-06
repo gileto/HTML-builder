@@ -14,7 +14,7 @@ fs.readdir(
       if (!stats.isDirectory()) {
        let splitted = file.name.split(".");
        console.log(
-        file.name + " - " + splitted[1] + " - " + stats.size + " bytes"
+        file.name + " - " + splitted[1] + " - ." + stats.size + " bytes"
        );
       }
      }
